@@ -13,4 +13,9 @@ import { CheckSampleComponent } from "./check-sample/check-sample.component";
 })
 export class AppComponent {
   title = 'life-cycle';
+  isAliveCheckSample = true;
+
+  checkSampleToogle () {
+    this.isAliveCheckSample = !this.isAliveCheckSample
+  }
 }
