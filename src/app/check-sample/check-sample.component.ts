@@ -8,9 +8,19 @@ import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked, Afte
   styleUrl: './check-sample.component.css'
 })
 export class CheckSampleComponent implements OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewChecked, AfterViewInit {
+  quantidade: number = 0
   ngOnInit(): void {
     console.log("OnInit");
   }
+
+  adicionar() {
+    this.quantidade++
+  }
+
+  subtrair() {
+    this.quantidade--
+  }
+
   ngDoCheck(): void {
     console.log("DoCheck");
   }
